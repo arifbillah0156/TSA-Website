@@ -27,13 +27,18 @@ const NavbarWithDropdown = () => {
         <div className="mx-auto px-2 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link href="/" className="lg:ml-[10%] mt-1">
+            <Link href="/" className="lg:ml-[4%] 2xl:ml-[10%] mt-2 flex items-center">
               <Image
                 src={TSA}
                 width={90}
                 height={90}
                 alt="TSA Logo"
               />
+              <p className="galada-regular mt-1">
+                <span className="text-2xl sm:text-4xl">Taqwa</span>
+                <br />
+                <span className="text-xl sm:text-2xl">Shishu Academy</span>
+              </p>
             </Link>
             {/* Blank Div */}
             {/* <div className="w-[50%] h-2 bg-red-700"></div> */}
@@ -48,7 +53,7 @@ const NavbarWithDropdown = () => {
                 onMouseLeave={() => setIsDropdownOpen3(false)}
                 onClick={() => setIsDropdownOpen3(!isDropdownOpen3)}
               >
-                <button id="NavAcademic" className="p-5 py-[10px] bg-lc text-white rounded-md text-md hover:underline hover:underline-offset-4 mt-[2px]">
+                <button id="NavAcademic" className="p-5 py-[10px] bg-white text-lc border border-lc hover:bg-lc hover:text-white transition-all duration-300 ease-in-out rounded-md text-md hover:underline hover:underline-offset-4 mt-[2px]">
                   <i className="fa-regular fa-rectangle-list mr-1"></i>
                   <span className="tracking-widest">Notices</span> <i className="fa-solid fa-chevron-down"></i>
                 </button>
@@ -70,7 +75,7 @@ const NavbarWithDropdown = () => {
                 onMouseLeave={() => setIsDropdownOpen(false)}
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               >
-                <button className="ml-2 p-5 py-[10px] bg-lc text-white rounded-md text-md hover:underline hover:underline-offset-4 mt-[2px]" id="NavAcademic">
+                <button className="ml-2 p-5 py-[10px] bg-white text-lc rounded-md text-md hover:underline hover:underline-offset-4 mt-[2px] border border-lc hover:bg-lc hover:text-white transition-all duration-300 ease-in-out" id="NavAcademic">
                   <i className="fa-solid fa-graduation-cap mr-1"></i>
                   Academic <i className="fa-solid fa-chevron-down"></i>
                 </button>
@@ -95,7 +100,7 @@ const NavbarWithDropdown = () => {
                 onMouseLeave={() => setIsDropdownOpen2(false)}
                 onClick={() => setIsDropdownOpen2(!isDropdownOpen2)}
               >
-                <button className="ml-2 p-5 py-[10px] bg-lc text-white rounded-md text-md hover:underline hover:underline-offset-4 mt-[2px]" id="Gallery">
+                <button className="ml-2 p-5 py-[10px] bg-white text-lc rounded-md text-md hover:underline hover:underline-offset-4 mt-[2px] border border-lc hover:bg-lc hover:text-white transition-all duration-300 ease-in-out" id="Gallery">
                   <i className="fa-solid fa-photo-film mr-1"></i>
                   Gallery <i className="fa-solid fa-chevron-down"></i>
                 </button>
@@ -117,7 +122,7 @@ const NavbarWithDropdown = () => {
             <div className="xl:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-lc border border-lc p-2 py-1 mr-6 rounded-md"
+                className="text-lc border border-lc p-2 py-1 mr-3 rounded-md"
               >
                 <svg
                   className="h-7 w-7"
