@@ -13,7 +13,7 @@ export default function Home() {
       <SmallBanners />
       <HomeSection4 />
       <HomeSection5 />
-      <HomeSection6 />
+      {/* <HomeSection6 /> */}
       <HomeSection7 />
       <HomeSection8 />
     </div>

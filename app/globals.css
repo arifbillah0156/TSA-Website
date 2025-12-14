@@ -34,11 +34,11 @@ body {
 }
 
 .mobileNavMenubar {
-  background-color: #932097;
   color: white;
   border-radius: 10px;
   margin: 6px;
   margin-top: 0px;
+  background-color: #92279e;
 }
 
 .linkDropdownMainText {

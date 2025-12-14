@@ -2,7 +2,7 @@
 import { useState } from "react";
 import NavHead from "./NavHead";
 // import NavLogo from "./NavLogo";
-import TSA from "@/public/Images/TSA Logo.jpg";
+import TSA from "@/public/TSA Logo.svg";
 import NavDropdownDesktop from "./NavDropdownDesktop";
 import NavDropdownDesktop2 from "./NavDropdownDesktop2";
 import NavDropdownMobile from "./NavDropdownMobile";
@@ -33,6 +33,7 @@ const NavbarWithDropdown = () => {
                 width={90}
                 height={90}
                 alt="TSA Logo"
+                quality={100}
               />
               <p className="galada-regular mt-1">
                 <span className="text-2xl sm:text-4xl">Taqwa</span>
@@ -53,7 +54,7 @@ const NavbarWithDropdown = () => {
                 onMouseLeave={() => setIsDropdownOpen3(false)}
                 onClick={() => setIsDropdownOpen3(!isDropdownOpen3)}
               >
-                <button id="NavAcademic" className="p-5 py-[10px] bg-white text-lc border border-lc hover:bg-lc hover:text-white transition-all duration-300 ease-in-out rounded-md text-md hover:underline hover:underline-offset-4 mt-[2px]">
+                <button id="NavAcademic" className="p-5 py-[10px] bg-white text-lc border border-lc hover:bg-lc hover:text-white transition-all duration-300 ease-in-out  text-md hover:underline hover:underline-offset-4 mt-[2px] border-l-0 border-r-0 border-t-0 rounded-none hover:rounded-md">
                   <i className="fa-regular fa-rectangle-list mr-1"></i>
                   <span className="tracking-widest">Notices</span> <i className="fa-solid fa-chevron-down"></i>
                 </button>
@@ -75,7 +76,7 @@ const NavbarWithDropdown = () => {
                 onMouseLeave={() => setIsDropdownOpen(false)}
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               >
-                <button className="ml-2 p-5 py-[10px] bg-white text-lc rounded-md text-md hover:underline hover:underline-offset-4 mt-[2px] border border-lc hover:bg-lc hover:text-white transition-all duration-300 ease-in-out" id="NavAcademic">
+                <button className="ml-2 p-5 py-[10px] bg-white text-lc  text-md hover:underline hover:underline-offset-4 mt-[2px] border border-lc hover:bg-lc hover:text-white transition-all duration-300 ease-in-out border-l-0 border-r-0 border-t-0 rounded-none hover:rounded-md" id="NavAcademic">
                   <i className="fa-solid fa-graduation-cap mr-1"></i>
                   Academic <i className="fa-solid fa-chevron-down"></i>
                 </button>
@@ -100,7 +101,7 @@ const NavbarWithDropdown = () => {
                 onMouseLeave={() => setIsDropdownOpen2(false)}
                 onClick={() => setIsDropdownOpen2(!isDropdownOpen2)}
               >
-                <button className="ml-2 p-5 py-[10px] bg-white text-lc rounded-md text-md hover:underline hover:underline-offset-4 mt-[2px] border border-lc hover:bg-lc hover:text-white transition-all duration-300 ease-in-out" id="Gallery">
+                <button className="ml-2 p-5 py-[10px] bg-white text-lc  text-md hover:underline hover:underline-offset-4 mt-[2px] border border-lc hover:bg-lc hover:text-white transition-all duration-300 ease-in-out border-l-0 border-r-0 border-t-0 rounded-none hover:rounded-md" id="Gallery">
                   <i className="fa-solid fa-photo-film mr-1"></i>
                   Gallery <i className="fa-solid fa-chevron-down"></i>
                 </button>
@@ -122,7 +123,7 @@ const NavbarWithDropdown = () => {
             <div className="xl:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-lc border border-lc p-2 py-1 mr-3 rounded-md"
+                className="text-white bg-lc border border-lc p-2 py-1 mr-3 rounded-md hover:bg-white hover:text-lc"
               >
                 <svg
                   className="h-7 w-7"
@@ -149,7 +150,7 @@ const NavbarWithDropdown = () => {
         </div>
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="xl:hidden mt-3 md:mt-4 font-bold tracking-wider">
+          <div className="xl:hidden mt-4 md:mt-4 font-bold tracking-wider">
             <div className="space-y-3 py-4 px-6 mobileNavMenubar">
               <div className="" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 <NavLinksMobile href="/" text="Home" icon="fa-solid fa-house" />
@@ -166,7 +167,7 @@ const NavbarWithDropdown = () => {
                   id="Gallery"
                 >
                   <i className="fa-regular fa-rectangle-list mr-1"></i>
-                  Notices <i className="fa-solid fa-caret-down"></i>
+                  Notices <i className="fa-solid fa-chevron-down"></i>
                 </button>
                 {isDropdownOpen3 && (
                   <div className="pl-4 underline underline-offset-4" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -184,7 +185,7 @@ const NavbarWithDropdown = () => {
                   id="NavAcademic"
                 >
                   <i className="fa-solid fa-graduation-cap mr-1"></i>
-                  Academic <i className="fa-solid fa-caret-down"></i>
+                  Academic <i className="fa-solid fa-chevron-down"></i>
                 </button>
                 {isDropdownOpen && (
                   <div className="pl-4" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -206,7 +207,7 @@ const NavbarWithDropdown = () => {
                   id="Gallery"
                 >
                   <i className="fa-solid fa-photo-film mr-1"></i>
-                  Gallery <i className="fa-solid fa-caret-down"></i>
+                  Gallery <i className="fa-solid fa-chevron-down"></i>
                 </button>
                 {isDropdownOpen2 && (
                   <div className="pl-4 underline underline-offset-4" onClick={() => setIsMenuOpen(!isMenuOpen)}>

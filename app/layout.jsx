@@ -7,32 +7,32 @@ import ElectricCursor from "@/components/Others/ElectricCursor";
 
 
 export const metadata = {
-  title: "Darul Azhar Model Madrasah (Main Campus)",
-  description: "Darul Azhar Model Madrasah (DAMM), An ideal Islamic educational institution focused on modern and religious education.",
+  title: "Taqwa Shishu Academy",
+  description: "Taqwa Shishu Academy, An ideal Islamic educational institution focused on modern and religious education.",
   keywords: [
-    "Darul Azhar",
-    "Model Madrasah",
+    "Taqwa",
+    "Taqwa Academy",
     "Islamic School",
     "Bangladesh Madrasah",
-    "DAMM",
+    "Taqwa Shishu Academy",
     "Education",
-    "Main Campus"
+    "Uttara Madrasah"
   ],
-  authors: [{ name: "Darul Azhar", url: "https://www.darulazharbd.com/" }],
-  creator: "Darul Azhar",
-  publisher: "Darul Azhar Model Madrasah",
-  metadataBase: new URL("https://www.darulazharbd.com/"),
+  authors: [{ name: "Taqwa Shishu Academy", url: "https://www.tsa-v1.vercel.app/" }],
+  creator: "Taqwa Shishu Academy",
+  publisher: "Taqwa Shishu Academy",
+  metadataBase: new URL("https://www.tsa-v1.vercel.app/"),
   openGraph: {
-    title: "Darul Azhar Model Madrasah",
+    title: "Taqwa Shishu Academy",
     description: "A modern Islamic institution combining traditional and contemporary education.",
-    url: "https://www.darulazharbd.com/",
-    siteName: "Darul Azhar Model Madrasah",
+    url: "https://www.tsa-v1.vercel.app/",
+    siteName: "Taqwa Shishu Academy",
     images: [
       {
-        url: "/Images/DAMM Logo.png",
+        url: "/TSA Logo.png",
         width: 1200,
         height: 630,
-        alt: "Darul Azhar Model Madrasah",
+        alt: "Taqwa Shishu Academy",
       },
     ],
     type: "website",
@@ -50,14 +50,10 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="google-adsense-account" content="ca-pub-9013512537152543"></meta>
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
           rel="stylesheet"
         />
-        {/* Google AdSense Script */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9013512537152543"
-          crossorigin="anonymous"></script>
       </head>
       <body className="bg-white text-gray-900 merriweather-regular noto-sans-bengali-damm">
         <Navbar />

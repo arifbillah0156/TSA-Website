@@ -1,12 +1,11 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import img1 from "@/public/DAMM-Principal.jpeg";
-import img2 from "@/public/smallBanner2.png";
-import img3 from "@/public/smallBanner3.png";
-import img4 from "@/public/smallBanner4.png";
+import img1 from "@/public/Images/smallBanner1.jpeg";
+import img2 from "@/public/Images/smallBanner2.jpeg";
+import img3 from "@/public/Images/smallBanner3.jpeg";
+import img4 from "@/public/Images/smallBanner4.jpeg";
 import Link from "next/link";
-import Loading from "@/app/loading";
 
 const HomeSection2 = () => {
   const [imgData, setImgData] = useState(null);
@@ -16,25 +15,25 @@ const HomeSection2 = () => {
       {
         imgUrl: img1,
         imgTxt: "আমাদের কথা",
-        fullImgUrl: "/DAMM-Principal.jpeg",
+        fullImgUrl: "/Images/smallBanner1.jpeg",
         src: "/#our-words"
       },
       {
         imgUrl: img2,
         imgTxt: "কেন এ আয়োজন",
-        fullImgUrl: "/smallBanner2.png",
+        fullImgUrl: "/Images/smallBanner2.jpeg",
         src: "/#why-this-event"
       },
       {
         imgUrl: img3,
         imgTxt: "আমাদের স্বাতন্ত্র্য",
-        fullImgUrl: "/smallBanner3.png",
+        fullImgUrl: "/Images/smallBanner3.jpeg",
         src: "/#our-uniqueness"
       },
       {
         imgUrl: img4,
         imgTxt: "আমাদের বৈশিষ্ট্য",
-        fullImgUrl: "/smallBanner4.png",
+        fullImgUrl: "/Images/smallBanner4.jpeg",
         src: "/#our-specialty"
       }
     ];
@@ -59,10 +58,10 @@ const HomeSection2 = () => {
                     className="h-[300px] w-full object-cover rounded-md md:rounded-lg"
                   />
                   <div className="text-xl mt-4 mb-2">
-                    <i className="fa-solid fa-arrow-up-right-from-square" style={{ color: "#118eee" }}></i>
-                    <Link href={img.src} className="ml-2" >{img.imgTxt}</Link>
+                    <i className="fa-solid fa-arrow-right-to-bracket text-lc"></i>
+                    <Link href={img.src} className="ml-2 galada-regular" >{img.imgTxt}</Link>
                   </div>
-                  <div className="absolute top-0 left-1  text-white text-start text-lg md:text-2xl p-4">
+                  <div className="absolute top-0 left-1  text-gray-200 text-start text-lg md:text-2xl p-4">
                     <Link
                       href={img.fullImgUrl}
                     >

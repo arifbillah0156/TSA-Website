@@ -8,16 +8,8 @@ import 'swiper/css/pagination';
 
 const images = [
   {
-    src: "/Banner1.jpg",
+    src: "/Images/Home Banner 1.jpeg",
     alt: "ADMISSION IS GOING ON"
-  },
-  {
-    src: "/Banner2.jpg",
-    alt: "ভর্তি চলিতেছে"
-  },
-  {
-    src: "/Banner3.jpg",
-    alt: "DARUL AZHAR MODEL MADRASAH"
   }
 ];
 
