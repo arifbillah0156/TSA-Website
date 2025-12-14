@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import img1 from "@/public/Images/smallBanner1.jpeg";
-import img2 from "@/public/Images/smallBanner2.jpeg";
-import img3 from "@/public/Images/smallBanner3.jpeg";
-import img4 from "@/public/Images/smallBanner4.jpeg";
+import img1 from "@/public/Images/SmallBanner1.jpeg";
+import img2 from "@/public/Images/SmallBanner2.jpeg";
+import img3 from "@/public/Images/SmallBanner3.jpeg";
+import img4 from "@/public/Images/SmallBanner4.jpeg";
 import Link from "next/link";
 
 const HomeSection2 = () => {
@@ -15,25 +15,25 @@ const HomeSection2 = () => {
       {
         imgUrl: img1,
         imgTxt: "আমাদের কথা",
-        fullImgUrl: "/Images/smallBanner1.jpeg",
+        fullImgUrl: "/Images/SmallBanner1.jpeg",
         src: "/#our-words"
       },
       {
         imgUrl: img2,
         imgTxt: "কেন এ আয়োজন",
-        fullImgUrl: "/Images/smallBanner2.jpeg",
+        fullImgUrl: "/Images/SmallBanner2.jpeg",
         src: "/#why-this-event"
       },
       {
         imgUrl: img3,
         imgTxt: "আমাদের স্বাতন্ত্র্য",
-        fullImgUrl: "/Images/smallBanner3.jpeg",
+        fullImgUrl: "/Images/SmallBanner3.jpeg",
         src: "/#our-uniqueness"
       },
       {
         imgUrl: img4,
         imgTxt: "আমাদের বৈশিষ্ট্য",
-        fullImgUrl: "/Images/smallBanner4.jpeg",
+        fullImgUrl: "/Images/SmallBanner4.jpeg",
         src: "/#our-specialty"
       }
     ];
