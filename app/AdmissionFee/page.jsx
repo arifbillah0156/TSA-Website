@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-import { AdmissionFees } from "@/lib/AdmissionFees.jsx";
+import { AdmissionFees } from "./AdmissionFees.jsx";
 import {
     FiDollarSign,
     FiCalendar,
@@ -211,7 +211,7 @@ export default function FeeTable2026() {
                             </div>
 
                             {showMobileDetails === index && (
-                                <div className="p-4 space-y-3">
+                                <div className="px-6 py-4 space-y-3">
                                     <div className="flex justify-between items-center pb-2 border-b">
                                         <div className="flex items-center gap-2">
                                             <FiFileText className="text-purple-600" />
@@ -252,7 +252,17 @@ export default function FeeTable2026() {
                                             <FiPackage className="text-purple-600" />
                                             <span>স্টেশনারি</span>
                                         </div>
-                                        <span className="font-medium">{formatCurrency(item.stationary)}</span>
+                                        <span className="font-medium">
+
+                                            {item.stationary == 0 ? (
+                                                <span>নেই</span>
+                                            ) : (
+                                                <>
+                                                    {formatCurrency(item.stationary)}৳
+                                                </>
+                                            )}
+
+                                        </span>
                                     </div>
                                     <div className="flex justify-between items-center pb-2 border-b">
                                         <div className="flex items-center gap-2">
@@ -266,7 +276,14 @@ export default function FeeTable2026() {
                                             <FiClock className="text-purple-600" />
                                             <span>ডে-কেয়ার</span>
                                         </div>
-                                        <span className="font-medium">{formatCurrency(item.dayCare)}</span>
+                                        <span className="font-medium">
+                                            {item.dayCare == 0 ? (
+                                                <span>নেই</span>
+                                            ) : (
+                                                <>
+                                                    {formatCurrency(item.dayCare)}৳
+                                                </>
+                                            )}</span>
                                     </div>
                                     <div className="flex justify-between items-center pt-2">
                                         <span className="font-bold text-pink-600">মোট</span>
@@ -284,17 +301,17 @@ export default function FeeTable2026() {
 
                 {/* Footer Note */}
                 <div
-                    className="mt-10 text-center text-gray-600"
+                    className="mt-10 text-center text-gray-700"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.8 }}
                 >
                     <p>ফি সংক্রান্ত যেকোনো প্রশ্নের জন্য অফিসে যোগাযোগ করুন</p>
                     <div className="mt-2 flex justify-center space-x-4">
-                        <Link href={"tel:+8801627449269"} className="px-4 py-2 bg-gradient-to-r from-lc to-pink-600 text-white rounded-lg hover:opacity-90 transition-opacity shadow-md">
+                        <Link href={"tel:+8801865065125"} className="px-4 py-2 bg-gradient-to-r from-lc to-pink-600 text-white rounded-lg hover:opacity-90 transition-opacity shadow-md">
                             <i className="fas fa-phone mr-2"></i> ফোন করুন
                         </Link>
-                        <Link href={"mailto:ksua1980@gmail.com"} className="px-4 py-2 bg-gradient-to-r from-green-600 to-sky-500 text-white rounded-lg hover:opacity-90 transition-opacity shadow-md">
+                        <Link href={"mailto:taqwamadrasa082@gmail.com"} className="px-4 py-2 bg-gradient-to-r from-pink-600 to-lc text-white rounded-lg hover:opacity-90 transition-opacity shadow-md">
                             <i className="fas fa-envelope mr-2"></i> ইমেল করুন
                         </Link>
                     </div>

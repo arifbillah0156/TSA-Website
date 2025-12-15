@@ -3,7 +3,6 @@ import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 import 'swiper/css';
 import 'swiper/css/navigation';
-import ElectricCursor from "@/components/Others/ElectricCursor";
 import ElectricCursorCSS from "@/components/Others/ElectricCursorWithCSS";
 
 
@@ -19,14 +18,14 @@ export const metadata = {
     "Education",
     "Uttara Madrasah"
   ],
-  authors: [{ name: "Taqwa Shishu Academy", url: "https://www.tsa-v1.vercel.app/" }],
+  authors: [{ name: "Taqwa Shishu Academy", url: "https://tsa-v1.vercel.app/" }],
   creator: "Taqwa Shishu Academy",
   publisher: "Taqwa Shishu Academy",
-  metadataBase: new URL("https://www.tsa-v1.vercel.app/"),
+  metadataBase: new URL("https://tsa-v1.vercel.app/"),
   openGraph: {
     title: "Taqwa Shishu Academy",
     description: "A modern Islamic institution combining traditional and contemporary education.",
-    url: "https://www.tsa-v1.vercel.app/",
+    url: "https://tsa-v1.vercel.app/",
     siteName: "Taqwa Shishu Academy",
     images: [
       {
@@ -58,7 +57,6 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-white text-gray-900 merriweather-regular noto-sans-bengali-damm">
         <Navbar />
-        {/* <ElectricCursor /> */}
         <ElectricCursorCSS />
         {children}
         <Footer />
