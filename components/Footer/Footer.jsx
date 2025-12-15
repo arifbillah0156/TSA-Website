@@ -121,10 +121,10 @@ const Footer = () => {
                 <div className="ml-3">
                   <p className="font-medium">Principal</p>
                   <a
-                    href="tel:+8801919916222"
+                    href="tel:+8801865065125"
                     className="text-purple-200 hover:text-white transition-colors duration-300"
                   >
-                    +88 01919-916222
+                    +88 01865-065125
                   </a>
                 </div>
               </li>
@@ -137,10 +137,10 @@ const Footer = () => {
                 <div className="ml-3">
                   <p className="font-medium">Email</p>
                   <a
-                    href="mailto:ksua1980@gmail.com"
+                    href="mailto:taqwamadrasa082@gmail.com"
                     className="text-purple-200 hover:text-white transition-colors duration-300"
                   >
-                    ksua1980@gmail.com
+                    taqwamadrasa082@gmail.com
                   </a>
                 </div>
               </li>
@@ -185,7 +185,7 @@ const Footer = () => {
               className="flex items-center group"
             >
               <div className="w-8 h-8 rounded-full bg-purple-700 flex items-center justify-center group-hover:bg-purple-600 transition-all duration-300">
-                <i className="fas fa-user text-purple-300 group-hover:text-white text-sm"></i>
+                <i className="fas fa-user text-purple-200 group-hover:text-white text-sm"></i>
               </div>
               <span className="ml-2 text-purple-200 group-hover:text-white transition-colors duration-300">
                 Arif Billah</span>
