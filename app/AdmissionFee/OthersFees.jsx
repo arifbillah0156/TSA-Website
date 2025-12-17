@@ -62,7 +62,7 @@ export default function OthersFees() {
                                 </h3>
                                 <ul className="space-y-2 text-sm text-gray-700">
                                     <li className="flex justify-between">
-                                        <span>ভর্তি/ডাইনিং খরচ</span>
+                                        <span>বাৎসরিক ডাইনিং খরচ</span>
                                         <span className="font-medium">৫০০</span>
                                     </li>
                                     <li className="flex justify-between">
@@ -71,14 +71,14 @@ export default function OthersFees() {
                                     </li>
                                     <li className="flex justify-between">
                                         <span>পরীক্ষার ফি</span>
-                                        <span className="font-medium">৫০০ + ৩০০ + ৩০০ + ৫০০</span>
+                                        <span className="font-medium">৫০০+৩০০+৩০০+৫০০</span>
                                     </li>
                                     <li className="flex justify-between">
                                         <span>স্পোর্টস</span>
                                         <span className="font-medium">৫০০</span>
                                     </li>
                                     <li className="flex justify-between">
-                                        <span>মাসিক ফি</span>
+                                        <span>মাহফিল ফি</span>
                                         <span className="font-medium">৫০০</span>
                                     </li>
                                 </ul>
@@ -86,7 +86,7 @@ export default function OthersFees() {
                                 <div className="mt-4 p-3 bg-yellow-100 rounded-md ">
 
                                     <p className="text-sm text-gray-800 font-medium text-justify">
-                                        <span>বি.দ্র.: চলতি মাসের ১০ তারিখের মধ্যে বেতন পরিশোধ করতে হবে। ২০ তারিখের মধ্যে পরিশোধ না করলে ২১ তারিখ থেকে সকল সার্ভিস বন্ধ থাকবে।</span>
+                                        <span>বি.দ্র.: চলতি মাসের ১০ তারিখের মধ্যে অবশ্যই বেতন পরিশোধ করতে হবে।</span>
                                     </p>
                                 </div>
                             </div>

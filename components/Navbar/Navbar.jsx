@@ -83,12 +83,13 @@ const NavbarWithDropdown = () => {
                 {isDropdownOpen && (
                   <div className="absolute ml-3 pt-2">
                     <div className=" bg-white text-lc ring-2 ring-lc ring-offset-2 rounded-[3px] shadow-lg">
-                      <NavDropdownDesktop href="/AdmissionFee" text="↪ Admission fee" />
-                      <NavDropdownDesktop href="/Education-system" text="↪ Education system" />
-                      <NavDropdownDesktop href="/Result-method" text="↪ Result method" />
+                      <NavDropdownDesktop href="/AdmissionFee" text="↪ Admission Fee" />
+                      <NavDropdownDesktop href="/AdmissionEligibility" text="↪ Admission Eligibility" />
+                      <NavDropdownDesktop href="/Education-system" text="↪ Education System" />
+                      <NavDropdownDesktop href="/Result-method" text="↪ Result Method" />
                       <NavDropdownDesktop href="/Rules" text="↪ Rules" />
                       <NavDropdownDesktop href="/Co-curriculum" text="↪ Co-curriculum" />
-                      <NavDropdownDesktop href="/Hostel-rules" text="↪ Hostel rules" />
+                      <NavDropdownDesktop href="/Hostel-rules" text="↪ Hostel Rules" />
                       <NavDropdownDesktop href="/Information-for-parents" text="↪ Information for parents" />
                     </div>
                   </div>
@@ -189,12 +190,13 @@ const NavbarWithDropdown = () => {
                 </button>
                 {isDropdownOpen && (
                   <div className="pl-4" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                    <NavDropdownMobile href="/AdmissionFee" text="↪ Admission fee" />
-                    <NavDropdownMobile href="/Education-system" text="↪ Education system" />
-                    <NavDropdownMobile href="/Result-method" text="↪ Result method" />
+                    <NavDropdownMobile href="/AdmissionFee" text="↪ Admission Fee" />
+                    <NavDropdownMobile href="/AdmissionEligibility" text="↪ Admission Eligibility" />
+                    <NavDropdownMobile href="/Education-system" text="↪ Education System" />
+                    <NavDropdownMobile href="/Result-method" text="↪ Result Method" />
                     <NavDropdownMobile href="/Rules" text="↪ Rules" />
                     <NavDropdownMobile href="/Co-curriculum" text="↪ Co-curriculum" />
-                    <NavDropdownMobile href="/Hostel-rules" text="↪ Hostel rules" />
+                    <NavDropdownMobile href="/Hostel-rules" text="↪ Hostel Rules" />
                     <NavDropdownMobile href="/Information-for-parents" text="↪ Information for parents" />
                   </div>
                 )}
