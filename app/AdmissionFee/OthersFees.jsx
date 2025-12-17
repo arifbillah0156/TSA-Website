@@ -2,11 +2,11 @@
 
 import { CheckCircle, Bus, Home, Star, Clock, DollarSign } from "lucide-react";
 
-export default function FeesAndWhyUs() {
+export default function OthersFees() {
     return (
-        <section className="w-full bg-gradient-to-br from-indigo-50 via-white to-purple-50 py-16 px-4 md:px-8">
+        <section className="w-full  py-16 px-4 md:px-8">
             <div className="max-w-7xl mx-auto">
-                <div className="text-center mb-12">
+                <div className="text-center mb-6">
                     <h1 className="text-3xl md:text-4xl font-bold text-lc mb-4">অন্যান্য সেবা ও খরচ</h1>
                     <p className="text-gray-700 max-w-2xl mx-auto text-sm">আমরা মানসম্মত শিক্ষা ও সুবিধাসমূহ নিশ্চিত করি যাতে শিক্ষার্থীরা একটি আদর্শ পরিবেশে পড়াশোনা করতে পারে</p>
                 </div>
@@ -83,9 +83,9 @@ export default function FeesAndWhyUs() {
                                     </li>
                                 </ul>
 
-                                <div className="mt-4 p-3 bg-yellow-100 rounded-md">
-                                    <p className="text-sm text-gray-800 font-medium flex items-start gap-2">
-                                        <Clock size={16} className="mt-0.5 text-amber-600" />
+                                <div className="mt-4 p-3 bg-yellow-100 rounded-md ">
+
+                                    <p className="text-sm text-gray-800 font-medium text-justify">
                                         <span>বি.দ্র.: চলতি মাসের ১০ তারিখের মধ্যে বেতন পরিশোধ করতে হবে। ২০ তারিখের মধ্যে পরিশোধ না করলে ২১ তারিখ থেকে সকল সার্ভিস বন্ধ থাকবে।</span>
                                     </p>
                                 </div>
@@ -165,11 +165,6 @@ export default function FeesAndWhyUs() {
                     </div>
                 </div>
 
-                <div className="mt-12 text-center">
-                    <button className="bg-gradient-to-r from-lc to-pink-600 text-white font-bold py-3 px-8 rounded-full ">
-                        আরও জানতে অফিসে যোগাযোগ করুন
-                    </button>
-                </div>
             </div>
         </section>
     );

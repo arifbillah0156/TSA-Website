@@ -11,6 +11,8 @@ import {
     FiX
 } from "react-icons/fi";
 import Link from "next/link";
+import { AcademicCapIcon } from "@heroicons/react/24/outline";
+import OthersFees from "./OthersFees.jsx";
 
 export default function FeeTable2026() {
     const [searchTerm, setSearchTerm] = useState("");
@@ -42,6 +44,11 @@ export default function FeeTable2026() {
             <div className="max-w-7xl mx-auto">
                 {/* Header Section */}
                 <div className="text-center mb-8">
+                    <div className="flex justify-center">
+                        <div className="p-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-lg">
+                            <AcademicCapIcon className="h-10 w-10 text-white" />
+                        </div>
+                    </div>
                     <h1 className="tiro-bangla-bold pt-8 text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 mb-3">
                         ২০২৬ শিক্ষাবর্ষের নির্ধারিত ফি
                     </h1>
@@ -299,9 +306,11 @@ export default function FeeTable2026() {
 
                 </div>
 
+                <OthersFees />
+
                 {/* Footer Note */}
                 <div
-                    className="mt-10 text-center text-gray-700"
+                    className="mb-12 text-center text-gray-700"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.8 }}
@@ -316,7 +325,9 @@ export default function FeeTable2026() {
                         </Link>
                     </div>
                 </div>
+
             </div>
+
         </div>
     );
 }
