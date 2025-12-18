@@ -121,7 +121,7 @@ export default function NoticeBoard() {
                         className="bg-white rounded-2xl shadow-xl p-8 md:p-12 text-center max-w-2xl mx-auto"
                     >
                         <div className="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <FiFileText className="text-blue-500 text-4xl" />
+                            <FiFileText className="text-lc text-4xl" />
                         </div>
                         <h3 className="text-2xl font-bold text-gray-800 mb-2">কোন নোটিশ পাওয়া যায়নি</h3>
                         <p className="text-gray-600 mb-6">
@@ -130,7 +130,7 @@ export default function NoticeBoard() {
                         {searchTerm && (
                             <button
                                 onClick={() => setSearchTerm("")}
-                                className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                                className="px-6 py-3 bg-gradient-to-r from-lc to-purple-600 text-white rounded-full  transition-all duration-300 shadow-md hover:shadow-lg"
                             >
                                 অনুসন্ধান পরিষ্কার করুন
                             </button>

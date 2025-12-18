@@ -113,11 +113,11 @@ const DesktopNotices = ({ notices, isLoading = false }) => {
         >
             <td colSpan="3" className="py-12 px-6 text-center">
                 <div className="flex flex-col items-center justify-center">
-                    <div className="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <FiFileText className="text-blue-500 text-4xl" />
+                    <div className="w-24 h-24 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <FiFileText className="text-lc text-4xl" />
                     </div>
-                    <h3 className="text-lg font-medium text-gray-700 mb-1">কোনো নোটিশ পাওয়া যায়নি</h3>
-                    <p className="text-gray-500">অন্য ফিল্টার ব্যবহার করে দেখুন</p>
+                    <h3 className="text-lg font-medium text-red-600 mb-1">কোনো নোটিশ পাওয়া যায়নি</h3>
+                    <p className="text-gray-600">অন্য ফিল্টার ব্যবহার করে দেখুন</p>
                 </div>
             </td>
         </motion.tr>
@@ -135,12 +135,12 @@ const DesktopNotices = ({ notices, isLoading = false }) => {
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                     <div className="relative flex-1 max-w-md">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <FiSearch className="text-gray-400" />
+                            <FiSearch className="text-lc" />
                         </div>
                         <input
                             type="text"
                             placeholder="নোটিশ খুঁজুন..."
-                            className="w-full outline-none pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
+                            className="w-full outline-none pl-10 pr-4 py-2 border border-lc rounded-lg focus:ring-2 focus:ring-offset-2 focus:ring-lc transition-all"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
@@ -158,10 +158,10 @@ const DesktopNotices = ({ notices, isLoading = false }) => {
                         <div className="relative">
                             <button
                                 onClick={() => setFilterOpen(!filterOpen)}
-                                className="flex items-center px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+                                className="flex items-center px-4 py-2 bg-white border border-lc rounded-lg hover:bg-lc hover:text-white transition-colors"
                             >
-                                <FiFilter className="mr-2 text-gray-600" />
-                                <span className="text-gray-700">ফিল্টার</span>
+                                <FiFilter className="mr-2" />
+                                <span className="">ফিল্টার</span>
                                 {filterOpen ? <FiChevronUp className="ml-2" /> : <FiChevronDown className="ml-2" />}
                             </button>
 
@@ -201,7 +201,7 @@ const DesktopNotices = ({ notices, isLoading = false }) => {
                             </AnimatePresence>
                         </div>
 
-                        <div className="text-sm text-gray-600 bg-white px-3 py-2 rounded-lg border border-gray-200">
+                        <div className="text-sm text-gray-800 bg-white px-3 py-2 rounded-lg border border-lc">
                             মোট {convertBengaliToEnglish(filteredNotices.length)} টি নোটিশ
                         </div>
                     </div>
@@ -211,11 +211,12 @@ const DesktopNotices = ({ notices, isLoading = false }) => {
             {/* Table */}
             <div className="">
                 <table className="w-full">
-                    <thead className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+                    <thead className="bg-gradient-to-r from-lc to-purple-600 text-white text-lg">
                         <tr>
                             <th
-                                className="py-4 px-6 text-left font-semibold rounded-tl-xl cursor-pointer hover:bg-blue-700 transition-colors"
+                                className="py-4 px-6 text-left font-semibold rounded-tl-xl cursor-pointer hover:bg-purple-600 transition-colors"
                                 onClick={() => requestSort('date')}
+                                title='Date Reverse'
                             >
                                 <div className="flex items-center">
                                     <span>তারিখ</span>
@@ -225,7 +226,7 @@ const DesktopNotices = ({ notices, isLoading = false }) => {
                                 </div>
                             </th>
                             <th
-                                className="py-4 px-6 text-left font-semibold cursor-pointer hover:bg-blue-700 transition-colors"
+                                className="py-4 px-6 text-left font-semibold cursor-pointer  transition-colors"
                                 onClick={() => requestSort('title')}
                             >
                                 <div className="flex items-center">
@@ -245,7 +246,7 @@ const DesktopNotices = ({ notices, isLoading = false }) => {
                             paginatedNotices.map((notice, index) => (
                                 <motion.tr
                                     key={notice[0]}
-                                    className="hover:bg-blue-50 transition-colors duration-200"
+                                    className="hover:bg-purple-50 transition-colors duration-200"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.3, delay: 0.1 * index }}
@@ -254,8 +255,8 @@ const DesktopNotices = ({ notices, isLoading = false }) => {
                                 >
                                     <td className="py-4 px-6">
                                         <div className="flex items-center">
-                                            <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                                                <FiCalendar className="text-blue-500" />
+                                            <div className="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center mr-3">
+                                                <FiCalendar className="text-lc" />
                                             </div>
                                             <span className="font-medium text-gray-700">
                                                 {formatDateWithBengaliMonth(notice[1]?.date)}
@@ -267,12 +268,12 @@ const DesktopNotices = ({ notices, isLoading = false }) => {
                                             href={notice[1].link}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-blue-600 hover:text-blue-800 font-medium flex items-center group"
+                                            className="text-lc  font-medium flex items-center group"
                                         >
-                                            <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3 group-hover:bg-blue-200 transition-colors">
-                                                <FiFileText className="text-blue-500" />
+                                            <div className="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center mr-3 group-hover:bg-purple-200 transition-colors">
+                                                <FiFileText className="text-lc" />
                                             </div>
-                                            <span className="text-lg">{notice[1].title}</span>
+                                            <span className="text-xl text-purple-700">{notice[1].title}</span>
                                         </a>
                                     </td>
                                     <td className="py-4 px-6 text-center">
@@ -280,7 +281,7 @@ const DesktopNotices = ({ notices, isLoading = false }) => {
                                             href={notice[1].link}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 hover:shadow-lg hover:scale-105"
+                                            className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-lc to-purple-600 text-white rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
                                             download
                                         >
                                             <FiDownload className="text-xl" />
@@ -298,13 +299,7 @@ const DesktopNotices = ({ notices, isLoading = false }) => {
             {/* Pagination */}
             {filteredNotices.length > itemsPerPage && (
                 <div className="px-6 py-4 bg-gray-50 border-t border-gray-100 w-full flex justify-center align-middle items-center">
-                    {/* <div className="text-sm text-gray-700">
-                        দেখানো হচ্ছে <span className="font-medium">{(currentPage - 1) * itemsPerPage + 1}</span> থেকে{' '}
-                        <span className="font-medium">
-                            {Math.min(currentPage * itemsPerPage, filteredNotices.length)}
-                        </span>{' '}
-                        এর মধ্যে <span className="font-medium">{filteredNotices.length}</span> টি নোটিশ
-                    </div> */}
+
 
                     <div className="flex space-x-4">
                         <button
@@ -335,8 +330,8 @@ const DesktopNotices = ({ notices, isLoading = false }) => {
                                     key={pageNum}
                                     onClick={() => setCurrentPage(pageNum)}
                                     className={`w-8 h-8 rounded-full ${currentPage === pageNum
-                                        ? 'bg-blue-600 text-white'
-                                        : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
+                                        ? 'bg-lc text-white'
+                                        : 'bg-white text-gray-800 hover:bg-gray-100 border border-gray-300'
                                         }`}
                                 >
                                     {pageNum}

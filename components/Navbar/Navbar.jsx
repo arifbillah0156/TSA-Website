@@ -86,17 +86,17 @@ const NavbarWithDropdown = () => {
                       <NavDropdownDesktop href="/AdmissionFee" text="↪ Admission Fee" />
                       <NavDropdownDesktop href="/AdmissionEligibility" text="↪ Admission Eligibility" />
                       <NavDropdownDesktop href="/Education-system" text="↪ Education System" />
+                      <NavDropdownDesktop href="/DressCode" text="↪ Dress Code" />
                       <NavDropdownDesktop href="/Result-method" text="↪ Result Method" />
-                      <NavDropdownDesktop href="/Rules" text="↪ Rules" />
-                      <NavDropdownDesktop href="/Co-curriculum" text="↪ Co-curriculum" />
-                      <NavDropdownDesktop href="/Hostel-rules" text="↪ Hostel Rules" />
+                      {/* <NavDropdownDesktop href="/Co-curriculum" text="↪ Co-curriculum" /> */}
+                      {/* <NavDropdownDesktop href="/Hostel-rules" text="↪ Hostel Rules" /> */}
                       <NavDropdownDesktop href="/Information-for-parents" text="↪ Information for parents" />
                     </div>
                   </div>
                 )}
               </div>
               {/* Dropdown Menu Gallery*/}
-              <div
+              {/* <div
                 className="relative z-10"
                 onMouseEnter={() => setIsDropdownOpen2(true)}
                 onMouseLeave={() => setIsDropdownOpen2(false)}
@@ -114,7 +114,8 @@ const NavbarWithDropdown = () => {
                     </div>
                   </div>
                 )}
-              </div>
+              </div> */}
+              <NavLinksDesktop href="/Photos" text="Gallery" icon="fa-solid fa-photo-film" />
               <NavLinksDesktop href="/About/PrincipalMessage" text="About" icon="fa-solid fa-circle-info" />
               <div className="ml-[-8px]">
                 <NavLinksDesktop href="/Contact" text="Contact" icon="fa-regular fa-address-book" />
@@ -193,16 +194,16 @@ const NavbarWithDropdown = () => {
                     <NavDropdownMobile href="/AdmissionFee" text="↪ Admission Fee" />
                     <NavDropdownMobile href="/AdmissionEligibility" text="↪ Admission Eligibility" />
                     <NavDropdownMobile href="/Education-system" text="↪ Education System" />
+                    <NavDropdownMobile href="/DressCode" text="↪ Dress Code" />
                     <NavDropdownMobile href="/Result-method" text="↪ Result Method" />
-                    <NavDropdownMobile href="/Rules" text="↪ Rules" />
-                    <NavDropdownMobile href="/Co-curriculum" text="↪ Co-curriculum" />
-                    <NavDropdownMobile href="/Hostel-rules" text="↪ Hostel Rules" />
+                    {/* <NavDropdownMobile href="/Co-curriculum" text="↪ Co-curriculum" /> */}
+                    {/* <NavDropdownMobile href="/Hostel-rules" text="↪ Hostel Rules" /> */}
                     <NavDropdownMobile href="/Information-for-parents" text="↪ Information for parents" />
                   </div>
                 )}
               </div>
               {/* Mobile Dropdown Menu Gallery */}
-              <div>
+              {/* <div>
                 <button
                   onClick={() => setIsDropdownOpen2(!isDropdownOpen2)}
                   className="block w-full p-2 bg-white text-lc rounded-md text-lg underline underline-offset-4"
@@ -217,6 +218,9 @@ const NavbarWithDropdown = () => {
                     <NavDropdownMobile2 href="/Videos" text="↪ Videos" />
                   </div>
                 )}
+              </div> */}
+              <div onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                <NavLinksMobile href="/Photos" text="Gallery" icon="fa-solid fa-photo-film" />
               </div>
               <div onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 <NavLinksMobile href="/About/PrincipalMessage" text="About" icon="fa-solid fa-circle-info" />

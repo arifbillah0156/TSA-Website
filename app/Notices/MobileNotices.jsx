@@ -115,9 +115,9 @@ const MobileNotices = ({ notices = [], isLoading = false }) => {
             className="bg-white rounded-2xl shadow-lg p-8 text-center"
         >
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <FiFileText className="text-blue-500 text-4xl" />
+                <FiFileText className="text-lc text-4xl" />
             </div>
-            <h3 className="text-lg font-medium text-gray-700 mb-1">কোনো নোটিশ পাওয়া যায়নি</h3>
+            <h3 className="text-lg font-medium text-red-600 mb-1">কোনো নোটিশ পাওয়া যায়নি</h3>
             <p className="text-gray-500 mb-4">অন্য ফিল্টার ব্যবহার করে দেখুন</p>
             <button
                 onClick={() => {
@@ -187,7 +187,7 @@ const MobileNotices = ({ notices = [], isLoading = false }) => {
                                     href={selectedNotice[1].link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors flex items-center justify-center"
+                                    className="px-4 py-3 bg-lc text-white rounded-lg hover:ring-2 hover:ring-lc hover:ring-offset-2 transition-colors flex items-center justify-center"
                                 >
                                     <FiEye className="mr-2" /> দেখুন
                                 </a>
@@ -210,7 +210,7 @@ const MobileNotices = ({ notices = [], isLoading = false }) => {
                                     <FiHeart className={`mr-2 ${favorites.includes(selectedNotice[0]) ? 'fill-current' : ''}`} />
                                     {favorites.includes(selectedNotice[0]) ? 'সংরক্ষিত' : 'সংরক্ষণ'}
                                 </button> */}
-                                <button className="px-4 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors flex items-center justify-center" onClick={() => ShareNotice({
+                                <button className="px-4 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-600 transition-colors flex items-center justify-center hover:ring-2 hover:ring-lc hover:ring-offset-2" onClick={() => ShareNotice({
                                     url: selectedNotice[1].link,
                                     title: selectedNotice[1].title
                                 })} >
@@ -239,12 +239,12 @@ const MobileNotices = ({ notices = [], isLoading = false }) => {
                     <div className="flex items-center space-x-3 mb-4">
                         <div className="relative flex-1">
                             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                <FiSearch className="text-gray-400" />
+                                <FiSearch className="text-lc" />
                             </div>
                             <input
                                 type="text"
                                 placeholder="নোটিশ খুঁজুন..."
-                                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 outline-none focus:border-blue-500 transition-all"
+                                className="w-full pl-10 pr-4 py-3 border border-lc rounded-lg focus:ring-2 focus:ring-lc focus:ring-offset-2 outline-none focus:border-lc transition-all"
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
                             />
@@ -260,7 +260,7 @@ const MobileNotices = ({ notices = [], isLoading = false }) => {
 
                         <button
                             onClick={() => setFilterOpen(!filterOpen)}
-                            className="p-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl hover:from-blue-600 hover:to-indigo-700 transition-all"
+                            className="p-3 bg-gradient-to-r from-lc to-purple-600 text-white rounded-xl transition-all"
                         >
                             <FiFilter size={20} />
                         </button>
@@ -374,33 +374,22 @@ const MobileNotices = ({ notices = [], isLoading = false }) => {
                             <div className="p-5">
                                 <div className="flex justify-between items-start mb-3">
                                     <div className="flex items-center text-sm text-gray-500">
-                                        <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-2 mt-[-4px]">
-                                            <FiCalendar className="text-blue-500" />
+                                        <div className="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center mr-2 mt-[-4px]">
+                                            <FiCalendar className="text-lc" />
                                         </div>
                                         <div>
                                             <span>{formatDate(notice[1]?.date)}</span>
-                                            {/* <div className="flex items-center text-xs text-gray-400 mt-1">
-                                                <FiClock className="mr-1" />
-                                                {new Date(notice[1]?.date).toLocaleTimeString('bn-BD', { hour: '2-digit', minute: '2-digit' })}
-                                            </div> */}
+
                                         </div>
                                     </div>
 
                                     <div className="flex space-x-2">
-                                        {/* <button
-                                            onClick={() => toggleFavorite(notice[0])}
-                                            className={`p-2 rounded-full ${favorites.includes(notice[0])
-                                                ? 'bg-yellow-100 text-yellow-500'
-                                                : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
-                                                }`}
-                                        >
-                                            <FiHeart className={favorites.includes(notice[0]) ? 'fill-current' : ''} />
-                                        </button> */}
                                         <a
                                             href={notice[1].link}
-                                            target="_blank"
+                                            target='_blank'
+                                            onClick={() => setSelectedNotice(notice)}
                                             rel="noopener noreferrer"
-                                            className="p-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full hover:from-blue-600 hover:to-indigo-700 transition-all hover:shadow-md"
+                                            className="p-2 bg-gradient-to-r from-lc to-purple-600 text-white rounded-full transition-all hover:shadow-md"
                                             download
                                         >
                                             <FiDownload />
@@ -413,12 +402,12 @@ const MobileNotices = ({ notices = [], isLoading = false }) => {
                                         onClick={() => setSelectedNotice(notice)}
                                         className="text-left w-full"
                                     >
-                                        <a href={notice[1].link} target='__blank' className="text-lg font-medium text-gray-800 mb-1 hover:text-blue-600 transition-colors flex">
-                                            <span className="min-w-8 max-w-8 min-h-8 max-h-8 rounded-full bg-blue-100  mr-3 group-hover:bg-blue-200 transition-colors flex justify-center items-center">
-                                                <FiFileText className="text-blue-500" />
+                                        <div className="text-lg font-medium mb-1 text-lc transition-colors flex">
+                                            <span className="min-w-8 max-w-8 min-h-8 max-h-8 rounded-full bg-purple-100  mr-3 group-hover:bg-blue-200 transition-colors flex justify-center items-center">
+                                                <FiFileText className="text-lc" />
                                             </span>
                                             <span className='hover:underline decoration-dotted underline-offset-4 mt-[3px]'>{notice[1].title}</span>
-                                        </a>
+                                        </div>
                                         {notice[1].description && (
                                             <p className="text-gray-600 text-sm line-clamp-2">
                                                 {notice[1].description}
@@ -428,22 +417,10 @@ const MobileNotices = ({ notices = [], isLoading = false }) => {
                                 </div>
 
                                 <div className="w-full flex justify-end items-center">
-                                    {/* <div className="flex items-center">
-                                        {notice[1].isImportant && (
-                                            <span className="px-2 py-1 bg-red-100 text-red-800 text-xs font-medium rounded-full flex items-center mr-2">
-                                                গুরুত্বপূর্ণ
-                                            </span>
-                                        )}
-                                        {notice[1].hasAttachment && (
-                                            <span className="px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full flex items-center">
-                                                <FiFileText className="mr-1" /> সংযুক্তি
-                                            </span>
-                                        )}
-                                    </div> */}
 
                                     <button
                                         onClick={() => setSelectedNotice(notice)}
-                                        className="text-blue-500 hover:text-blue-700 flex items-center text-md"
+                                        className="text-purple-700 flex items-center text-md"
                                     >
                                         <FiInfo className="mr-1 mt-[-4px]" /> Options
                                     </button>
@@ -486,6 +463,7 @@ const MobileNotices = ({ notices = [], isLoading = false }) => {
                     </div>
                 )}
             </motion.div>
+            <br />
         </>
     );
 };

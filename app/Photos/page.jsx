@@ -15,7 +15,7 @@ export default function ImageGallery() {
                     {images.map((src, index) => (
                         <div
                             key={index}
-                            className="overflow-hidden rounded-lg border p-2 shadow-lg transform transition duration-300 hover:scale-105 cursor-zoom-in"
+                            className="overflow-hidden rounded-lg border p-2 shadow-lg transform transition duration-300 hover:scale-105 cursor-zoom-in ring-2 ring-lc"
                             onClick={() => setSelectedImage(src)}
                         >
                             <img
@@ -27,6 +27,7 @@ export default function ImageGallery() {
                         </div>
                     ))}
                 </div>
+                <br />
             </section>
 
             {/* Fullscreen Lightbox */}

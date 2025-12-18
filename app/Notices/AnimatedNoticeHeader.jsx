@@ -12,7 +12,7 @@ const AnimatedNoticeHeader = () => {
         >
             {/* Background gradient with animation */}
             <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-full"
+                className="absolute inset-0 bg-gradient-to-r from-lc to-purple-600 rounded-full"
                 initial={{ backgroundPosition: "0% 50%" }}
                 animate={{ backgroundPosition: "100% 50%" }}
                 transition={{
