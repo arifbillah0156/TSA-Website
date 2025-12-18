@@ -225,7 +225,7 @@ const TeacherGuidelinesPage = () => {
                         <input
                             type="text"
                             placeholder="নির্দেশনা খুজুন..."
-                            className="w-full pl-12 pr-12 py-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 focus:border-indigo-500 shadow-lg transition-all duration-300 bg-white/90 backdrop-blur-sm outline-none focus:rounded-lg"
+                            className="w-full pl-12 pr-12 py-4 rounded-xl border border-lc focus:ring-2 focus:ring-offset-2 focus:ring-lc  shadow-lg transition-all duration-300 bg-white/90 backdrop-blur-sm outline-none focus:rounded-lg"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                             onFocus={() => setIsSearchFocused(true)}
@@ -263,7 +263,7 @@ const TeacherGuidelinesPage = () => {
                 <div className="mb-10">
                     <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4">
                         <h2 className="text-xl font-semibold text-gray-700 flex items-center gap-2 mb-3 sm:mb-0">
-                            <FiFilter className="text-indigo-600 mt-[-4px] " />
+                            <FiFilter className="text-lc mt-[-4px] " />
                             ফিল্টার করুন
                         </h2>
                         <span className="text-sm text-gray-500 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm border border-gray-200">
@@ -373,7 +373,7 @@ const TeacherGuidelinesPage = () => {
                                         <div className="flex-grow">
                                             {/* Date moved to top */}
                                             <div className="mb-3">
-                                                <div className="flex justify-center items-center text-sm text-gray-500 bg-blue-50 px-3 py-1.5 rounded-full">
+                                                <div className="flex justify-center items-center text-sm text-gray-600 border bg-purple-50 px-3 py-1.5 rounded-full">
                                                     <FiCalendar className="mr-1.5 mt-[-4px]" />
                                                     <span>{formatDate(post.postDate)}</span>
                                                 </div>
@@ -397,12 +397,12 @@ const TeacherGuidelinesPage = () => {
                                             {/* Title with star icon */}
                                             <div className="mb-3">
                                                 <h2 className="text-lg text-gray-800">
-                                                    <span className="font-bold text-indigo-700">বিষয়:</span>{" "}
+                                                    <span className="font-bold text-lc">বিষয়:</span>{" "}
                                                     <span className="italic font-medium">{post.postTitle}</span>
                                                 </h2>
                                             </div>
                                             <div className="mb-4">
-                                                <div className="border-l-4 border-indigo-500 pl-4 py-2 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-r-lg">
+                                                <div className="border-l-4 border-lc pl-4 py-2 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-r-lg">
                                                     <p className="text-gray-700 whitespace-pre-line">
                                                         {expandedPost === post.id || post.postContent.length < 150
                                                             ? post.postContent
@@ -414,7 +414,7 @@ const TeacherGuidelinesPage = () => {
                                         <div className="flex justify-center mt-4">
                                             <button
                                                 onClick={() => openPostModal(post)}
-                                                className="flex items-center gap-1 text-indigo-600 hover:text-indigo-800 text-sm font-medium transition-colors"
+                                                className="flex items-center gap-1 text-lc text-sm font-medium transition-colors"
                                             >
                                                 <FiMaximize2 className="text-lg" />
                                                 সম্পূর্ণ পড়ুন
@@ -576,7 +576,7 @@ const TeacherGuidelinesPage = () => {
                                             {getAudienceLabel(selectedPost.targetAudience)}
                                         </span>
                                     </div>
-                                    <div className="border-l-4 border-indigo-500 pl-4 py-2 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-r-lg">
+                                    <div className="border-l-4 border-lc pl-4 py-2 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-r-lg">
                                         <p className="text-gray-700 whitespace-pre-line text-lg leading-relaxed">
                                             {selectedPost.postContent}
                                         </p>
@@ -585,7 +585,7 @@ const TeacherGuidelinesPage = () => {
                                 <div className="flex justify-center mt-8">
                                     <button
                                         onClick={closePostModal}
-                                        className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl"
+                                        className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-lc to-purple-600 text-white rounded-xl hover:ring-2 hover:ring-offset-2 hover:ring-lc transition-all shadow-lg hover:shadow-xl"
                                     >
                                         <FiMinimize2 />
                                         বন্ধ করুন

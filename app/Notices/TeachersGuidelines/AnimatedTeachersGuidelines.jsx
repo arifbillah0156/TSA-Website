@@ -12,7 +12,7 @@ const AnimatedTeachersGuidelines = () => {
         >
             {/* Animated background with multiple gradients */}
             <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 rounded-full"
+                className="absolute inset-0 bg-gradient-to-r from-lc via-lc to-purple-600 rounded-full"
                 initial={{ backgroundPosition: "0% 0%" }}
                 animate={{ backgroundPosition: "100% 100%" }}
                 transition={{

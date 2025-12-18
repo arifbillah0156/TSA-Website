@@ -17,7 +17,7 @@ const NavHead = () => {
           <span>+88 01865-065125</span>
         </Link>
       </div>
-      <div className="md:py-1">
+      <div className="md:py-1 hidden lg:block">
         <Link
           href={"mailto:taqwamadrasa082@gmail.com"}
           className="font-mono tracking-normal flex justify-center items-center gap-2"
@@ -26,7 +26,7 @@ const NavHead = () => {
           <span>taqwamadrasa082@gmail.com</span>
         </Link>
       </div>
-      <div className="md:py-1 hidden lg:block">
+      <div className="md:py-1">
         <Link
           href={"https://www.facebook.com/taqwashishuacademy"}
           className="font-mono tracking-normal flex justify-center items-center gap-2"
