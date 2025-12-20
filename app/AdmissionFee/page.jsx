@@ -306,26 +306,28 @@ export default function FeeTable2026() {
 
                 </div>
 
-                <OthersFees />
 
-                {/* Footer Note */}
-                <div
-                    className="mb-12 text-center text-gray-700"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.8 }}
-                >
-                    <p>ফি সংক্রান্ত যেকোনো প্রশ্নের জন্য অফিসে যোগাযোগ করুন</p>
-                    <div className="mt-2 flex justify-center space-x-4">
-                        <Link href={"tel:+8801865065125"} className="px-4 py-2 bg-gradient-to-r from-lc to-pink-600 text-white rounded-lg hover:opacity-90 transition-opacity shadow-md">
-                            <i className="fas fa-phone mr-2"></i> ফোন করুন
-                        </Link>
-                        <Link href={"mailto:taqwamadrasa082@gmail.com"} className="px-4 py-2 bg-gradient-to-r from-pink-600 to-lc text-white rounded-lg hover:opacity-90 transition-opacity shadow-md">
-                            <i className="fas fa-envelope mr-2"></i> ইমেল করুন
-                        </Link>
-                    </div>
+
+            </div>
+
+            <OthersFees />
+
+            {/* Footer Note */}
+            <div
+                className="mb-12 text-center text-gray-700"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.8 }}
+            >
+                <p>ফি সংক্রান্ত যেকোনো প্রশ্নের জন্য অফিসে যোগাযোগ করুন</p>
+                <div className="mt-2 flex justify-center space-x-4">
+                    <Link href={"tel:+8801865065125"} className="px-4 py-2 bg-gradient-to-r from-lc to-pink-600 text-white rounded-lg hover:opacity-90 transition-opacity shadow-md">
+                        <i className="fas fa-phone mr-2"></i> ফোন করুন
+                    </Link>
+                    <Link href={"mailto:taqwamadrasa082@gmail.com"} className="px-4 py-2 bg-gradient-to-r from-pink-600 to-lc text-white rounded-lg hover:opacity-90 transition-opacity shadow-md">
+                        <i className="fas fa-envelope mr-2"></i> ইমেল করুন
+                    </Link>
                 </div>
-
             </div>
 
         </div>
