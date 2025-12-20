@@ -71,7 +71,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-6 pb-2 border-b border-purple-600 inline-block">Follow Us</h3>
             <div className="space-y-4">
               <Link
-                href="https://www.youtube.com/"
+                href="https://www.youtube.com/@taqwashishuacademy"
                 className="flex items-center group"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -95,7 +95,7 @@ const Footer = () => {
               </Link>
 
               <Link
-                href="https://www.facebook.com/taqwashishuacademy"
+                href="https://www.facebook.com/ustazabdullahalhadi"
                 className="flex items-center group"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -121,10 +121,10 @@ const Footer = () => {
                 <div className="ml-3">
                   <p className="font-medium">Principal</p>
                   <a
-                    href="tel:+8801865065125"
+                    href="tel:+8801865065114"
                     className="text-purple-200 hover:text-white transition-colors duration-300"
                   >
-                    +88 01865-065125
+                    +88 01865-065114
                   </a>
                 </div>
               </li>

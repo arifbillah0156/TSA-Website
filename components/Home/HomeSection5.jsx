@@ -47,7 +47,7 @@ export default function HomeSection5() {
 
 
           {/* Content Cards */}
-          <div className="mt-12 space-y-8">
+          <div className="mt-12 space-y-8 noto-serif-bengali-regular text-[17px] ">
             {/* Our Words */}
             <motion.div
               ref={sectionRefs["our-words"]}

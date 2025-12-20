@@ -9,20 +9,20 @@ const HomeSection8 = () => {
     id: "1",
     icon: "teacher",
     text: "Teachers",
-    number: "30",
-    className: "group relative bg-gradient-to-br from-white to-emerald-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-emerald-100 pt-4 pb-4"
+    number: "55",
+    className: "group relative bg-gradient-to-br from-white to-emerald-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-purple-100 pt-4 pb-4"
   }, {
     id: "2",
     icon: "students",
     text: "Students",
     number: "500",
-    className: "group relative bg-gradient-to-br from-blue-50 to-gray-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-emerald-100 pt-4 pb-4"
+    className: "group relative bg-gradient-to-br from-blue-50 to-gray-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-purple-100 pt-4 pb-4"
   }, {
     id: "3",
     icon: "teamwork",
     text: "Staff",
     number: "20",
-    className: "group relative bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-emerald-100 pt-4 pb-4"
+    className: "group relative bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-purple-100 pt-4 pb-4"
   }]
 
   return (
@@ -50,7 +50,7 @@ const HomeSection8 = () => {
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl md:text-3xl font-bold mb-3 abril-fatface-regular text-gray-800 group-hover:text-emerald-700 transition-colors duration-300">
+              <h3 className="text-2xl md:text-3xl font-bold mb-3 abril-fatface-regular text-gray-800 group-hover:text-lc transition-colors duration-300">
                 {text}
               </h3>
 

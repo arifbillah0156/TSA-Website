@@ -35,10 +35,10 @@ const NavbarWithDropdown = () => {
                 alt="TSA Logo"
                 quality={100}
               />
-              <p className="galada-regular mt-1">
+              <p className="roboto-slab-regular mt-1">
                 <span className="text-2xl sm:text-4xl">Taqwa</span>
                 <br />
-                <span className="text-xl sm:text-2xl">Shishu Academy</span>
+                <span className="text-lg sm:text-2xl">Shishu Academy</span>
               </p>
             </Link>
             {/* Blank Div */}
@@ -96,7 +96,7 @@ const NavbarWithDropdown = () => {
                 )}
               </div>
               {/* Dropdown Menu Gallery*/}
-              {/* <div
+              <div
                 className="relative z-10"
                 onMouseEnter={() => setIsDropdownOpen2(true)}
                 onMouseLeave={() => setIsDropdownOpen2(false)}
@@ -114,9 +114,9 @@ const NavbarWithDropdown = () => {
                     </div>
                   </div>
                 )}
-              </div> */}
-              <NavLinksDesktop href="/Photos" text="Gallery" icon="fa-solid fa-photo-film" />
-              <NavLinksDesktop href="/About/PrincipalMessage" text="About" icon="fa-solid fa-circle-info" />
+              </div>
+              {/* <NavLinksDesktop href="/Photos" text="Gallery" icon="fa-solid fa-photo-film" /> */}
+              <NavLinksDesktop href="/About" text="About" icon="fa-solid fa-circle-info" />
               <div className="ml-[-8px]">
                 <NavLinksDesktop href="/Contact" text="Contact" icon="fa-regular fa-address-book" />
               </div>
@@ -203,7 +203,7 @@ const NavbarWithDropdown = () => {
                 )}
               </div>
               {/* Mobile Dropdown Menu Gallery */}
-              {/* <div>
+              <div>
                 <button
                   onClick={() => setIsDropdownOpen2(!isDropdownOpen2)}
                   className="block w-full p-2 bg-white text-lc rounded-md text-lg underline underline-offset-4"
@@ -218,12 +218,12 @@ const NavbarWithDropdown = () => {
                     <NavDropdownMobile2 href="/Videos" text="↪ Videos" />
                   </div>
                 )}
+              </div>
+              {/* <div onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                <NavLinksMobile href="/Photos" text="Gallery" icon="fa-solid fa-photo-film" />
               </div> */}
               <div onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                <NavLinksMobile href="/Photos" text="Gallery" icon="fa-solid fa-photo-film" />
-              </div>
-              <div onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                <NavLinksMobile href="/About/PrincipalMessage" text="About" icon="fa-solid fa-circle-info" />
+                <NavLinksMobile href="/About" text="About" icon="fa-solid fa-circle-info" />
               </div>
               <div onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 <NavLinksMobile href="/Contact" text="Contact" icon="fa-regular fa-address-book" />

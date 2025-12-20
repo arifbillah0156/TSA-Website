@@ -65,7 +65,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50 noto-serif-bengali-regular">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl  font-bold text-center text-lc abril-fatface-regular">
           <SplitText
@@ -102,7 +102,7 @@ export default function WhyChooseUs() {
                 </h3>
 
                 {/* Description with improved readability */}
-                <p className="mt-3 text-gray-600 text-sm text-center leading-relaxed">
+                <p className="mt-3 text-gray-700 text-[15px] text-center leading-relaxed">
                   {feature.description}
                 </p>
               </div>

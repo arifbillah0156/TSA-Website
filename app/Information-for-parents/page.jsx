@@ -1,79 +1,92 @@
-"use client"
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { FiMoon, FiSun, FiUserCheck, FiCalendar, FiDollarSign, FiHome, FiShield, FiAlertCircle, FiInfo, FiChevronDown, FiChevronUp, FiUsers } from 'react-icons/fi';
+import {
+    Clock,
+    ShieldCheck,
+    Handshake,
+    MessageSquare,
+    Heart,
+    Shirt,
+    ThumbsDown,
+    BookOpen,
+    Apple,
+    Home,
+    CreditCard,
+    User,
+    VolumeX,
+    FileText,
+    Shield,
+    Info
+} from 'lucide-react';
+import { FiUsers } from 'react-icons/fi';
 
-const points = [
-    "প্রত্যেক অভিভাবকের মাসে ১ বার হলেও কর্তৃপক্ষের সাথে সাক্ষাৎ জরুরি।",
-    "প্রত্যেক অভিভাবককে মাসিক বেতন প্রতি ইংরেজি মাসের ১০ তারিখের মধ্যে অবশ্যই প্রদান করতে হবে।",
-    "কোনো ছাত্র কোনো মাসের কিছুদিন বা অধিকাংশ দিন অনুপস্থিত থাকলে এর জন্য মাসিক বেতন থেকে কোনো টাকা ফেরত দেয়া হয় না।",
-    "উল্লেখিত মাসিক বেতন খাবার, আবাসিক চার্জ ও বেতন বাবদ নেয়া অর্থের বাইরের যে কোনো খরচ অভিভাবককে বহন করতে হবে।",
-    "বিশেষ কোনো সমস্যা না থাকলে আর্থিক লেনদেন অভিভাবককেই করতে হবে।",
-    "ভর্তির পর তা বাতিল করতে চাইলে ভর্তিসংক্রান্ত কোনো টাকা ফেরত দেয়া হবে না।",
-    "মাদরাসা কর্তৃপক্ষ ছাত্রের সার্বিক নিরাপত্তা ব্যবস্থা গ্রহণ করে, তা সত্ত্বেও কোনো ছাত্র পালালে কিংবা কোনো দুর্ঘটনায় পড়লে কর্তৃপক্ষকে দায়ী করা যাবে না।",
-];
-
-const iconMap = [
-    <FiUserCheck className="text-xl" />,
-    <FiCalendar className="text-xl" />,
-    <FiDollarSign className="text-xl" />,
-    <FiHome className="text-xl" />,
-    <FiDollarSign className="text-xl" />,
-    <FiAlertCircle className="text-xl" />,
-    <FiShield className="text-xl" />,
-    <FiInfo className="text-xl" />,
-];
-
-const colorMap = [
-    'from-blue-500 to-indigo-600',
-    'from-emerald-500 to-teal-600',
-    'from-amber-500 to-orange-600',
-    'from-rose-500 to-pink-600',
-    'from-violet-500 to-purple-600',
-    'from-cyan-500 to-sky-600',
-    'from-fuchsia-500 to-rose-600',
-    'from-lime-500 to-green-600',
-];
-
-export default function GuardianInfo() {
-    const [darkMode, setDarkMode] = useState(false);
-    const [expandedIndex, setExpandedIndex] = useState(null);
-
-    const toggleDarkMode = () => {
-        setDarkMode(!darkMode);
-    };
-
-    const toggleExpand = (index) => {
-        setExpandedIndex(expandedIndex === index ? null : index);
-    };
-
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.1
-            }
+export default function InformationForParents() {
+    const points = [
+        {
+            text: "প্রতিদিন সন্তানকে সাথে নিয়ে পাঁচ ওয়াক্ত নামাজ সময়মত আদায় করার চেষ্টা করতে হবে। কখনো বাচ্চার সামনে নামাজ ছাড়া যাবে না।",
+            icon: Clock
+        },
+        {
+            text: "বাচ্চার সামনে কখনো মিথ্যা কথা বলা যাবে না ও কাউকে ধোঁকা দেয়া যাবে না।",
+            icon: ShieldCheck
+        },
+        {
+            text: "সন্তানের সাথে কেবল এমন ওয়াদা করতে হবে, যা রক্ষা করতে পারবেন। ওয়াদা করে ওয়াদা ভঙ্গ করা যাবে না।",
+            icon: Handshake
+        },
+        {
+            text: "শেখানোর নিয়তে নিজে বার বার আগে সালাম দিতে হবে।",
+            icon: MessageSquare
+        },
+        {
+            text: "সন্তানের সামনে স্বামী-স্ত্রী বা পরিবারের বড়রা কখনো ঝগড়া করা যাবে না।",
+            icon: Heart
+        },
+        {
+            text: "ভর্তির পর শিক্ষার্থীকে প্রতিষ্ঠান কর্তৃক নির্ধারিত পোশাক পরিধানে সচেষ্ট হতে হবে এবং চুল, নখসহ সামগ্রিক পরিষ্কার ও পরিপাটির দিকে বিশেষ খেয়াল রাখতে হবে।",
+            icon: Shirt
+        },
+        {
+            text: "সন্তানের সামনে কাউকে গালি দেয়া যাবে না এবং খারাপ আচরণ করা যাবে না। মনে রাখতে হবে বাচ্চা সবকিছু দেখে দেখে শিখছে।",
+            icon: ThumbsDown
+        },
+        {
+            text: "প্রতিষ্ঠান থেকে যে আমল ও আখলাক শেখানো হবে, বাসার বড়রা সেই আমলগুলো তার সামনে বার বার করে তাকে শিখতে সহযোগিতা করতে হবে।",
+            icon: BookOpen
+        },
+        {
+            text: "১০০% হালাল রিজিক ভক্ষণ করার চেষ্টা করতে হবে এবং সন্তানকে খাওয়ানোর চেষ্টা করতে হবে। কখনো সন্তানকে একটুও হারাম খাওয়ানো যাবে না।",
+            icon: Apple
+        },
+        {
+            text: "শিক্ষার্থীর প্রতিষ্ঠান ও বাসার পরিবেশ একরকম রাখার চেষ্টা করতে হবে। কোনোভাবেই বাসায় গান-বাজনা ও টেলিভিশনের ব্যবস্থা রাখা যাবে না।",
+            icon: Home
+        },
+        {
+            text: "মাসিক প্রদেয় প্রতি চলতি মাসের ১–৭ তারিখের মধ্যে অবশ্যই পরিশোধ করে প্রতিষ্ঠান পরিচালনায় সহযোগিতা করতে হবে।",
+            icon: CreditCard
+        },
+        {
+            text: "অভিভাবিকাগণ শরিয়তসম্মত পর্দা ছাড়া প্রতিষ্ঠানের ভেতরে প্রবেশ করতে পারবেন না।",
+            icon: User
+        },
+        {
+            text: "মাদরাসার ভেতরে ধূমপান ও জোরে কথা বলা নিষিদ্ধ। মোবাইলে গানজাতীয় রিংটোন ব্যবহার করলে মাদরাসায় প্রবেশের পূর্বেই তা বন্ধ করতে হবে।",
+            icon: VolumeX
+        },
+        {
+            text: "আমরা সম্পূর্ণ নিজস্ব সিলেবাসে পাঠদান করে থাকি। তাই প্রচলিত অন্যান্য প্রতিষ্ঠানের সিলেবাসের সাথে আমাদের প্রভেদ থাকাই স্বাভাবিক।",
+            icon: FileText
+        },
+        {
+            text: "সন্তান আল্লাহর পক্ষ থেকে আপনার কাছে আমানত। তার সঠিক পরিচর্যার জন্য অবশ্যই সময় দিতে হবে। অবহেলার কারণে সন্তানের আখলাক, চরিত্র বা পড়াশোনায় ক্ষতি হলে এর জবাবদিহি আল্লাহর কাছে আপনাকেই করতে হবে।",
+            icon: Shield
         }
-    };
-
-    const itemVariants = {
-        hidden: { y: 20, opacity: 0 },
-        visible: {
-            y: 0,
-            opacity: 1,
-            transition: {
-                duration: 0.5,
-                ease: "easeOut"
-            }
-        }
-    };
+    ];
 
     return (
-        <div className={`min-h-screen py-8 px-4 sm:px-6 transition-colors duration-300 `}>
-            <div className="max-w-4xl mx-auto">
+        <section className="max-w-5xl mx-auto px-4 py-10 rounded-3xl">
+            <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-6 md:p-8 transform transition-all duration-300 hover:shadow-2xl">
                 {/* Header */}
-                <motion.div
+                <div
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
@@ -90,48 +103,38 @@ export default function GuardianInfo() {
                             অভিভাবকের জ্ঞাতব্য
                         </h1>
                         <p className="tiro-bangla-regular text-gray-700 max-w-2xl mx-auto text-md md:text-lg">
-                            মাদরাসার নিয়মাবলী ও গুরুত্বপূর্ণ তথ্য
+                            ভর্তি সম্পন্ন করতে নিচের বিষয়গুলোর ব্যাপারে অভিভাবকের একমত হওয়া আবশ্যক।
                         </p>
                     </div>
 
-                </motion.div>
+                </div>
 
-                {/* Points List */}
-                <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    animate="visible"
-                    className="space-y-5"
-                >
-                    {points.map((point, index) => (
-                        <motion.div
-                            key={index}
-                            variants={itemVariants}
-                            whileHover={{ y: -5 }}
-                            className={`rounded-xl overflow-hidden shadow-lg transition-all duration-300 ${darkMode ? 'bg-gray-800 hover:bg-gray-750' : 'bg-white hover:shadow-xl'}`}
-                        >
-                            <div
-                                className={`p-5 cursor-pointer flex items-center ${darkMode ? 'text-gray-200' : 'text-gray-800'}`}
-                                onClick={() => toggleExpand(index)}
+                <ul className="space-y-5">
+                    {points.map((item, index) => {
+                        const Icon = item.icon;
+                        return (
+                            <li
+                                key={index}
+                                className="flex gap-4 items-start border border-purple-100 rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
                             >
-                                <div className={`flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center mr-4 bg-gradient-to-r ${colorMap[index]}`}>
-                                    <div className="text-white">
-                                        {iconMap[index]}
-                                    </div>
+                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-r from-lc to-purple-600 text-white flex items-center justify-center shadow-md">
+                                    <Icon className="w-5 h-5" />
                                 </div>
                                 <div className="flex-1">
-                                    <div className="flex justify-between items-start">
-                                        <h3 className="font-medium text-lg leading-relaxed">{point}</h3>
-
-                                    </div>
+                                    <p className="text-gray-800 leading-relaxed text-lg">{item.text}</p>
                                 </div>
-                            </div>
-                        </motion.div>
-                    ))}
-                </motion.div>
+                            </li>
+                        );
+                    })}
+                </ul>
+
+                <div className="mt-10 rounded-xl p-6 text-center transform transition-all duration-300 hover:scale-[1.02] text-lc">
+                    <p className="font-medium">
+                        <i className="fa-solid fa-circle-info mr-2"></i>
+                        <span>উপরোক্ত বিষয়গুলো পালন করার ব্যাপারে একমত হয়েই কেবল সন্তান ভর্তির চিন্তা করার জন্য বিশেষভাবে অনুরোধ জানানো হচ্ছে।</span>
+                    </p>
+                </div>
             </div>
-            <br />
-            <br />
-        </div>
+        </section>
     );
 }

@@ -30,7 +30,7 @@ export default function DressCodeSection() {
                 </div>
 
                 {/* Navigation Tabs */}
-                <div className="flex flex-wrap justify-center mb-8 md:mb-12 gap-3">
+                {/* <div className="flex flex-wrap justify-center mb-8 md:mb-12 gap-3">
                     {['all', 'boys', 'girls'].map((tab) => (
                         <button
                             key={tab}
@@ -45,7 +45,7 @@ export default function DressCodeSection() {
                             {tab === 'girls' && '👧 ছাত্রীদের ইউনিফর্ম'}
                         </button>
                     ))}
-                </div>
+                </div> */}
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
                     {/* Left Content */}
@@ -68,7 +68,7 @@ export default function DressCodeSection() {
                                         <div className="space-y-4">
                                             <div className="flex items-center gap-3">
                                                 <span className="bg-[#004141] text-white px-4 py-2 rounded-lg font-mono text-sm shadow">
-                                                    004141
+                                                    #004141
                                                 </span>
                                                 <span className="text-gray-700 font-medium">ডার্ক ভিরিডিয়ান</span>
                                             </div>
@@ -150,7 +150,7 @@ export default function DressCodeSection() {
                         <div className="w-full max-w-[250px] md:max-w-[200px] lg:max-w-[250px] group">
                             <div className="absolute -inset-4  rounded-2xl blur-md opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
                             <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden border-4 border-white transform transition duration-500">
-                                <div className="w-full h-[500px] md:h-[450px] lg:h-[500px]">
+                                <div className="w-full h-[500px] md:h-[450px] lg:h-[700px]">
                                     <Image
                                         src="/Images/BoyDress.png"
                                         alt="Student Dress Code Boy"
@@ -170,7 +170,7 @@ export default function DressCodeSection() {
                         <div className="w-full max-w-[250px] md:max-w-[200px] lg:max-w-[250px] group">
                             <div className="absolute -inset-4  rounded-2xl blur-md opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
                             <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden border-4 border-white transform transition duration-500">
-                                <div className="w-full h-[500px] md:h-[450px] lg:h-[500px]">
+                                <div className="w-full h-[500px] md:h-[450px] lg:h-[700px]">
                                     <Image
                                         src="/Images/GirlDress.png"
                                         alt="Student Dress Code Girl"

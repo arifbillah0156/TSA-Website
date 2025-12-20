@@ -119,7 +119,7 @@ export default function OthersFees() {
                                         <div className="bg-purple-100 rounded-full p-1 mt-0.5 group-hover:bg-purple-200 transition-colors">
                                             <CheckCircle className="text-purple-600 w-5 h-5" />
                                         </div>
-                                        <span className="text-gray-700 group-hover:text-gray-900 transition-colors">{item}</span>
+                                        <span className="text-gray-700 group-hover:text-gray-900 transition-colors noto-serif-bengali-regular  mt-[3px]">{item}</span>
                                     </li>
                                 ))}
                             </ul>

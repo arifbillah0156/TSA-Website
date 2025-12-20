@@ -1,10 +1,10 @@
 const youtubeVideos = {
-    video1: 'https://www.youtube.com/embed/MJk_H3I31Ws?si=JS2DSqSi3gKSKgwd',
-    video2: 'https://www.youtube.com/embed/1gPoN44XB_o?si=xH98SPifMQgEpO4G',
-    video3: 'https://www.youtube.com/embed/FFHQbGyVAgI?si=OBq5Tk0bO9_JglK7',
-    video4: 'https://www.youtube.com/embed/XCtZlutVe28?si=Vx6n1-wU3WjYtk9M',
-    video5: 'https://www.youtube.com/embed/20QlbJhAfAM?si=ExLPDP7o4BGnoBu0',
-    video6: 'https://www.youtube.com/embed/M9xEa4pC4yg?si=LRrAaEeYizZfQPoP',
+    video1: 'https://www.youtube.com/embed/HRXhEXrCi6A',
+    video2: 'https://www.youtube.com/embed/iQDquev1oZU',
+    video3: 'https://www.youtube.com/embed/XlXXtsUrEAM',
+    video4: 'https://www.youtube.com/embed/EoDdXOEddRM',
+    video5: 'https://www.youtube.com/embed/zZh9CwS_rbY',
+    video6: 'https://www.youtube.com/embed/xvjfyuIFcpU',
 };
 
 const YouTubeGallery = () => {
@@ -15,7 +15,7 @@ const YouTubeGallery = () => {
             </h1>
             <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {Object.entries(youtubeVideos).map(([key, url]) => (
-                    <div key={key} className="overflow-hidden rounded-lg border p-2 shadow-lg bg-white">
+                    <div key={key} className="overflow-hidden rounded-lg border p-2 border-lc shadow-lg bg-white">
                         <div className="aspect-w-16 aspect-h-8">
                             <iframe
                                 className="w-full h-[300px] rounded-lg"
