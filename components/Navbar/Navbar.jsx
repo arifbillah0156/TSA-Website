@@ -24,7 +24,7 @@ const NavbarWithDropdown = () => {
       <NavHead />
       {/* Nav Links bg-[#0072BC] */}
       <nav className="text-lc py-2">
-        <div className="mx-auto px-2 sm:px-6 lg:px-8">
+        <div className="mx-auto px-2 sm:px-6">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link href="/" className="lg:ml-[4%] 2xl:ml-[10%] mt-2 flex items-center">
