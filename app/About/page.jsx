@@ -62,10 +62,10 @@ const AboutSection = () => {
                         animate={isMounted ? { backgroundPosition: "100% 50%" } : { backgroundPosition: "0% 50%" }}
                         transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
                     >
-                        প্রতিষ্ঠান পরিচালক পরিচিতি
+                        প্রতিষ্ঠান ও পরিচালক পরিচিতি
                     </motion.h2>
                     <motion.div
-                        className="w-32 h-1.5 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full"
+                        className="w-36 h-1.5 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full"
                         initial={{ width: 0 }}
                         animate={isMounted ? { width: "8rem" } : { width: 0 }}
                         transition={{ duration: 0.8, delay: 0.3 }}
