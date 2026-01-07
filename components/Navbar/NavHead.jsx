@@ -13,7 +13,7 @@ const NavHead = () => {
           href={"tel:+8801865065125"}
           className="font-mono tracking-normal flex justify-center items-center gap-2"
         >
-          <Image src={contact} width={25} height={25} alt="Contact" className="rounded-full" />
+          <div className="p-[2px] bg-white rounded-full"><Image src={contact} width={25} height={25} alt="Contact" className="rounded-full" /></div>
           <span>+88 01865-065125</span>
         </Link>
       </div>
@@ -22,7 +22,10 @@ const NavHead = () => {
           href={"mailto:taqwamadrasa082@gmail.com"}
           className="font-mono tracking-normal flex justify-center items-center gap-2"
         >
-          <Image src={email} width={25} height={25} alt="Email" className="rounded-full" />
+          <div className="p-[2px] bg-white rounded-full">
+
+            <Image src={email} width={25} height={25} alt="Email" className="rounded-full" />
+          </div>
           <span>taqwamadrasa082@gmail.com</span>
         </Link>
       </div>
@@ -32,7 +35,10 @@ const NavHead = () => {
           className="font-mono tracking-normal flex justify-center items-center gap-2"
           target="_blank"
         >
-          <Image src={fb} width={25} height={25} alt="Facebook" className="rounded-full" />
+          <div className="p-[2px] bg-white rounded-full">
+
+            <Image src={fb} width={25} height={25} alt="Facebook" className="rounded-full" />
+          </div>
           <span>Taqwa Shishu Academy</span>
         </Link>
       </div>
