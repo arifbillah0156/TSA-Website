@@ -190,6 +190,7 @@ export default function AdminLogin() {
                 </div>
             </div>
 
+
             {/* <style jsx global>{`
                 @keyframes float {
                     0% { transform: translate(0, 0) rotate(0deg); }
