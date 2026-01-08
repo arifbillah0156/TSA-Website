@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaPhone, FaEnvelope, FaUser, FaCommentAlt, FaSchool, FaFemale, FaBook, FaMosque, FaStar, FaUserTie, FaChalkboardTeacher } from 'react-icons/fa';
 import { Contact } from 'lucide-react';
+import MessageForm from './SendMessage';
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({
@@ -157,79 +158,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Send Message Section */}
-                <motion.div
-                    className="bg-white rounded-xl shadow-lg p-6 md:p-8"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                >
-                    <div className="text-center mb-8">
-                        <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-lc to-purple-600 mb-2">
-                            আমাদের মেসেজ পাঠান
-                        </h2>
-                        <p className="text-gray-600">যেকোনো প্রশ্ন বা মতামত থাকলে আমাদের জানান</p>
-                    </div>
-
-                    <form onSubmit={handleSubmit} className="space-y-6">
-                        <div className="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label className="block text-gray-700 mb-2 font-medium">
-                                    <FaUser className="inline mr-2 text-purple-500" />
-                                    আপনার নাম
-                                </label>
-                                <input
-                                    type="text"
-                                    name="name"
-                                    value={formData.name}
-                                    onChange={handleInputChange}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
-                                    placeholder="আপনার নাম লিখুন"
-                                    required
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-gray-700 mb-2 font-medium">
-                                    <FaPhone className="inline mr-2 text-pink-500" />
-                                    ফোন নম্বর
-                                </label>
-                                <input
-                                    type="tel"
-                                    name="phone"
-                                    value={formData.phone}
-                                    onChange={handleInputChange}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
-                                    placeholder="আপনার ফোন নম্বর লিখুন"
-                                    required
-                                />
-                            </div>
-                        </div>
-
-                        <div>
-                            <label className="block text-gray-700 mb-2 font-medium">
-                                <FaCommentAlt className="inline mr-2 text-purple-500" />
-                                আপনার মেসেজ
-                            </label>
-                            <textarea
-                                name="message"
-                                value={formData.message}
-                                onChange={handleInputChange}
-                                rows="5"
-                                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
-                                placeholder="আপনার মেসেজ লিখুন..."
-                                required
-                            ></textarea>
-                        </div>
-
-                        <motion.button
-                            type="submit"
-                            className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg"
-                            whileHover={{ scale: 1.02 }}
-                            whileTap={{ scale: 0.98 }}
-                        >
-                            মেসেজ পাঠান
-                        </motion.button>
-                    </form>
-                </motion.div>
+                <MessageForm />
             </div>
         </div>
     );

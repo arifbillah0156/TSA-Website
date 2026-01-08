@@ -113,9 +113,9 @@ const MessageList = () => {
     };
 
     return (
-        <>
+        <div className="bg-lc p-[2px] rounded-xl h-[400px] overflow-hidden">
             <motion.div
-                className="bg-white rounded-xl shadow-lg p-6 md:p-8 ring-2 ring-purple-200"
+                className="bg-white rounded-[10px] p-6 md:p-8 h-full overflow-y-auto"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -209,7 +209,7 @@ const MessageList = () => {
                                     <div className="flex justify-between items-start">
                                         <div className="flex-grow">
                                             <div className="flex items-center gap-2 mb-1">
-                                                <FaUser className="text-purple-500" />
+                                                <FaUser className="mt-[-4px] text-purple-500" />
                                                 <span className="font-medium">{message.name}</span>
                                                 <span className="text-gray-500">|</span>
                                                 <FaPhone className="text-pink-500" />
@@ -327,7 +327,7 @@ const MessageList = () => {
                 draggable
                 pauseOnHover
             />
-        </>
+        </div>
     );
 };
 

@@ -6,6 +6,7 @@ import { push, ref, set } from "firebase/database";
 import { database } from "@/lib/firebase";
 import TeacherPostForm from './TeachersGuidelines';
 import { motion, AnimatePresence } from 'framer-motion';
+import MessageList from './Messages';
 
 export default function DashboardPage() {
     const { register, handleSubmit, reset } = useForm();
@@ -242,7 +243,11 @@ export default function DashboardPage() {
                                     </div>
                                 </div>
                             )}
+                            {/* Messages */}
+                            <br />
+                            <MessageList />
                         </motion.div>
+
                     </div>
                 </div>
             </div></div>) : (<div className="fixed inset-0 flex items-center justify-center bg-lc text-white z-50">
