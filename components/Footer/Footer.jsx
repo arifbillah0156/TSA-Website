@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-indigo-500 rounded-full mix-blend-soft-light filter blur-xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 xl:px-6 pt-8 pb-2 relative z-10">
+      <div className="container mx-auto px-4 xl:px-6 pt-8 pb-2 relative">
         {/* Footer Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 pb-6 border-b border-purple-600">
           {/* Logo Section */}

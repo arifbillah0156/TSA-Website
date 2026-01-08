@@ -208,7 +208,7 @@ const TeacherGuidelinesPage = () => {
                 <div className="absolute top-40 right-20 w-72 h-72 bg-indigo-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
                 <div className="absolute bottom-20 left-1/3 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"></div>
             </div>
-            <div className="max-w-7xl mx-auto relative z-0">
+            <div className="max-w-7xl mx-auto relative ">
                 {/* Header */}
                 <div className="text-center mb-4 pt-2">
                     <AnimatedTeachersGuidelines />
