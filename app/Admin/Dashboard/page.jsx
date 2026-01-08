@@ -64,8 +64,8 @@ export default function DashboardPage() {
                         transition={{ duration: 0.5 }}
                         className="text-center mb-10"
                     >
-                        <h1 className="text-3xl md:text-4xl font-bold text-indigo-800 mb-2">অ্যাডমিন ড্যাশবোর্ড</h1>
-                        <p className="text-gray-600">নোটিশ এবং শিক্ষক নির্দেশিকা পরিচালনা করুন</p>
+                        <h1 className="text-3xl md:text-4xl font-bold text-lc tiro-bangla-bold mb-2">অ্যাডমিন ড্যাশবোর্ড</h1>
+                        <p className="text-gray-600">নোটিশ এবং শিক্ষক নির্দেশিকা পোস্ট করুন</p>
                     </motion.div>
 
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12'>
@@ -76,7 +76,7 @@ export default function DashboardPage() {
                             transition={{ duration: 0.5, delay: 0.2 }}
                             className="bg-white rounded-2xl shadow-lg overflow-hidden"
                         >
-                            <div className="bg-gradient-to-r from-blue-600 to-cyan-500 p-4 text-center">
+                            <div className="bg-gradient-to-r from-lc to-pink-600 p-4 text-center">
                                 <h2 className="text-xl font-bold text-white">"Teachers' Guidelines" পোস্ট করুন</h2>
                             </div>
                             <div className="md:p-6">
@@ -91,7 +91,7 @@ export default function DashboardPage() {
                             transition={{ duration: 0.5, delay: 0.4 }}
                             className="rounded-2xl overflow-hidden"
                         >
-                            <div className="bg-gradient-to-r from-blue-600 to-cyan-500 p-4 text-center">
+                            <div className="bg-gradient-to-r from-pink-600 to-lc p-4 text-center">
                                 <h2 className="text-xl font-bold text-white">"Official Announcements" আপলোড করুন</h2>
                             </div>
 
